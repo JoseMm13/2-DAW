@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercise 3: Rocket League Temporada 24 </title>
 </head>
 <body>
-    
+    <header>
+        <h1>Rocket League - Temporada 24</h1>
+        <p>Resumen de contenido, recompensas, vehículos y recursos de la nueva temporada.</p>
+    </header>
+    <!-- Imágenes -->
+    <section>
+        <h2>Galería de la Temporada 24</h2>
+
+        <figure>
+            <img src="https://static.wikia.nocookie.net/rocketleague/images/a/a8/Neon_Fields_arena_preview.png/revision/latest/scale-to-width-down/1000?cb=20211022193635" 
+                 alt="Nuevo estadio Neon Circuit de Rocket League Temporada 24">
+            <figcaption>Nuevo estadio futurista “Neon Circuit”, introducido en la Temporada 24.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="https://static.wikia.nocookie.net/rocketleague/images/4/49/Octane_body_icon_orange.png/revision/latest?cb=20181017024908" 
+                 alt="Octane en Rocket League">
+            <figcaption>Octane naranja, una de las recompensas destacadas del Rocket Pass.</figcaption>
+        </figure>
+    </section>
+    <hr>
+
+    <!-- Audio -->
+    <section>
+        <h2>Ambientación sonora</h2>
+        <p>Escucha un fragmento del nuevo tema musical del menú principal:</p>
+
+        <audio controls>
+            <source src="musica-temporada24.mp3" type="audio/mpeg">
+            <source src="musica-temporada24.ogg" type="audio/ogg">
+            Tu navegador no soporta audio HTML5. Actualiza a una versión más reciente.
+        </audio>
+    </section>
+
+    <hr>
+
+    <!-- Video -->
+    <section>
+        <h2>Tráiler oficial de la Temporada 24</h2>
+
+        <video width="480" height="270" controls poster="poster-temporada24.jpg">
+            <source src="https://youtu.be/1t9IMJrEe-8" type="video/mp4">
+            <track src="subtitulos-temporada24.vtt" kind="subtitles" srclang="es" label="Español">
+            Tu navegador no soporta video HTML5.
+        </video>
+    </section>
+
+    <hr>
+
+    <!-- Contenido Embebido -->
+    <section>
+        <h2>Mapa del estadio Neon Circuit</h2>
+        <p>Ubicación aproximada del estadio futurista dentro del universo de Rocket League:</p>
+
+        <iframe 
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.7038%2C40.4168%2C-3.7038%2C40.4168&layer=mapnik"
+            width="600" height="350" 
+            allowfullscreen 
+            loading="lazy">
+        </iframe>
+
+        <p>Mapa incrustado mediante <code>&lt;iframe&gt;</code>.</p>
+    </section>
+
+    <hr>
 </body>
 </html>
 
