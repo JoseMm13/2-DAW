@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6: Formulario de Club de socio de GRANVARA ***** Relais & SPA Hotel</title>
+</head>
+<body>
+    <h1>Club de Socio — GRANVARA ***** Relais & SPA Hotel</h1>
+    <form>
+        <fieldset>
+            <legend>Datos de la Cuenta</legend>
+            <!-- Código de Socio -->
+            <label for="codigo">Código de Socio (Ej: ES-1234):</label><br>
+            <input type="text" id="codigo" name="codigo" 
+                   required
+                   pattern="[A-Z]{2}-[0-9]{4}"
+                   placeholder="ES-1234"><br><br>
+            <!-- Nombre de Usuario -->
+            <label for="usuario">Nombre de Usuario (4 a 10 letras minúsculas):</label><br>
+            <input type="text" id="usuario" name="usuario"
+                   required
+                   pattern="[a-z]{4,10}"
+                   placeholder="usuario"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Información de Contacto y Suscripción</legend>
+            <!-- Teléfono -->
+            <label for="telefono">Teléfono de contacto (9 dígitos):</label><br>
+            <input type="tel" id="telefono" name="telefono"
+                   required
+                   pattern="[6-9][0-9]{8}"
+                   placeholder="612345678"><br><br>
+            <!-- Nivel de suscripción -->
+            <label for="nivel">Nivel de suscripción:</label><br>
+            <select id="nivel" name="nivel" required>
+                <option value="">-- Selecciona un nivel --</option>
+                <option value="principiante">Principiante</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select><br><br>
+        </fieldset>
+        <br>
+        <!-- Botones -->
+        <button type="submit">Registrarse</button>
+        <button type="reset">Limpiar Formulario</button>
+    </form>
+    <footer>
+        <p>© 2026 GRANVARA ***** Relais & SPA Hotel. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
