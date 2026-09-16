@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7: Reserva de plaza y vehículo para trabajo compartido</title>
+</head>
+<body>
+    <header>
+        <h1>Reserva de plaza y vehículo para trabajo compartido</h1>
+        <p> Formulario para reservar una plaza y un vehículo para trabajo compartido. 
+            Por favor, complete los campos requeridos a continuación:
+        </p>
+    </header>
+    <main>
+        <form>
+            <label for="box">Identificador del Puesto (Box): </label></main></br>
+            <input type="text" id="box" name="box" required 
+            pattern="BOX([1-9]|[1-9][0-9])"
+            placeholder="BOX5 o BOX42">
+            </br>
+            <label for="cp">Código Postal de facturación:</label><br>
+            <input type="text" id="cp" name="cp"
+                   required
+                   pattern="[0-9]{5}"
+                   placeholder="03001">
+            <br>
+            <label for="matricula">Matrícula del Vehículo (opcional):</label><br>
+            <input type="text" id="matricula" name="matricula"
+                   pattern="[0-9]{4} [A-Z]{3}"
+                   placeholder="4567 BCD">
+            <br>
+            <label for="fecha">Fecha de entrada:</label><br>
+            <input type="date" id="fecha" name="fecha"
+                   required>
+            <br>
+            <button type="submit">Reservar</button>
+        </form>
+    </main>
+</body>
+</html>
