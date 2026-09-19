@@ -1,0 +1,3 @@
+Utilitza Google Chrome (opció de Ferramentes per a desenrotlladors, pestanya Network) per a veure l’esquema de petició i resposta HTTP cap a alguna web coneguda. Identifica el codi d’estat, les capçaleres de resposta (tracta d’identificar algunes d’elles) i el contingut.
+
+· Amb la pestanya Network de Google Chrome es pot veure com el navegador fa una petició a una web i com el servidor respon. El codi d’estat indica si la càrrega ha anat bé, per exemple 200 OK. En les capçaleres de resposta es poden identificar dades com Content-Type, Content-Length o Server. Finalment, el contingut és el codi HTML o altres recursos que rep la pàgina.
