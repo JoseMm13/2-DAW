@@ -1,0 +1,3 @@
+Utilitza l’eina Google Trends per a buscar els termes de Laravel, Symfony i Node.js. Dedueix a partir de les cerques quin d’ells creus que és més popular actualment. Després, acudeix a la web de InfoJobs i busca ofertes de treball amb aquests tres frameworks, per a determinar quin és el més demandat en l’actualitat.
+
+· Node.js sembla el framework més popular en cerques actuals. En ofertes de treball, Laravel, Symfony i Node.js tenen demanda, però Node.js i Laravel solen aparéixer més sovint. Symfony normalment té una presència un poc menor.
