@@ -1,0 +1,1 @@
+import { patients } from './clinicData.js'
