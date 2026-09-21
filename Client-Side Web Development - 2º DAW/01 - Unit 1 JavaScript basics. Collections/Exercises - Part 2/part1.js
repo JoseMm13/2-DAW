@@ -1,8 +1,8 @@
 // Part 1 
 // Section 1
-import { patients } from './clinicData.js'
+import { clinicData } from './clinicData.js'
 
-const consults = patients.flatMap(p => p.consultations)
+const consults = clinicData.flatMap(p => p.consultations)
 console.log(consults)
 
 const totalRevenue = consults.reduce((acc, c) => acc + c.fee, 0)
@@ -82,5 +82,3 @@ if (targetConsultation) {
 } else {
   console.log("Target consultation not found.");
 }
-
-// Section 5
