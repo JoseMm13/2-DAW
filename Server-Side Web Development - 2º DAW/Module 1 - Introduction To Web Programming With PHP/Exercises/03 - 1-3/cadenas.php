@@ -1,4 +1,8 @@
-
+<!--
+    Autor: José Ángel García Martínez 2º DAW-Semi
+    Fecha: 20/10/2023
+    Descripción: Ejercicio 1 de cadenas en PHP
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
