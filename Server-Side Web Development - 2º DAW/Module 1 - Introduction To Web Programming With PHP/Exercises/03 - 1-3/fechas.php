@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eejrcicio 3: Fechas</title>
+    <title>Eejrcicio 3: Fechas.</title>
 </head>
 <body>
     <?php 
