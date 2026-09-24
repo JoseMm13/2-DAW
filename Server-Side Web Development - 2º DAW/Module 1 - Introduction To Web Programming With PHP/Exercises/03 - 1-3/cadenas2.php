@@ -12,7 +12,7 @@
 </head>
 <body>
     <?php
-        $url = 'https://usuario:clave@midominio.com:8080/ruta/archivo.php?producto=libro&precio=20#seccion2';
+        $url = 'http://username:password@hostname:9090/path?arg=value#anchor';
         $partes = parse_url($url);
 
         echo "Protocolo utilizado: " . ($partes['scheme'] ?? 'No existe') . "<br>";
