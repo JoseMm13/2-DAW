@@ -12,6 +12,23 @@
 </head>
 <body>
     <?php 
+        function insert($table, $param) {
+            $nombres = implode(", ", array_keys($param));
+            $valores = ":" .implode(", :", array_keys($param));
+
+            return sprintf("INSERT INTO %s (%s) VALUES %s (%s)", $table, $nombres, $valores);
+        }
+
+        // Insertamos un dato
+        $datos = [
+            "nombre" => "José Ángel",
+            "edad" => 28,
+            "ciudad" => "Alicante",
+            "email" => "joseangel@prueba.com"
+        ];
+
+        echo insert("Usuarios",$datos);
+        
      ?>
 </body>
 </html>
