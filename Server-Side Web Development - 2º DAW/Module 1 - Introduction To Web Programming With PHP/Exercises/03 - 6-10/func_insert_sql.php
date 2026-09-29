@@ -16,7 +16,7 @@
             $nombres = implode(", ", array_keys($param));
             $valores = ":" .implode(", :", array_keys($param));
 
-            return sprintf("INSERT INTO %s (%s) VALUES %s (%s)", $table, $nombres, $valores);
+            return sprintf("INSERT INTO %s (%s) VALUES (%s)", $table, $nombres, $valores);
         }
 
         // Insertamos un dato
@@ -28,7 +28,7 @@
         ];
 
         echo insert("Usuarios",$datos);
-        
+
      ?>
 </body>
 </html>
