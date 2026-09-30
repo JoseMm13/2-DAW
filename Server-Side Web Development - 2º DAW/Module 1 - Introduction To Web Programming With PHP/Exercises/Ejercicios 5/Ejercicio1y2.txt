@@ -1,0 +1,21 @@
+1.- Entra en las herramientas de desarrollo (F12) y pincha en la pestaña Network. 
+Realiza una llamada a uno de los ejercicios como por ejemplo: 
+http://localhost/ejercicios/prueba.php 
+Aparecerán todas las peticiones de recursos de la llamada, pincha en la página php 
+solicitada y se verá la información de la petición:
+
+2.- De forma similar al ejercicio anterior, realiza la siguiente llamada: 
+http://localhost/ejercicios/prueba.php?nombre=María&clase=2DAW 
+Contesta las siguientes cuestiones: 
+• El tipo de petición se ha realizado:
+	- El tipo de petición es get.
+
+• El código devuelto, ya sea de error o de respuesta OK 
+	- El código devuelto me aparece 404 ya que no tengo ese documento pero si 
+lo hago con uno existente me sale el código 200 OK, además si el documento .php tiene
+un error interno saldría el error 500.
+
+• La información de la Query String (ventana Payload). Las variables y sus valores 
+recibidos.
+	- Variable: 		nombre | clase
+	- Valor recibido: 	María  | 2DAW
