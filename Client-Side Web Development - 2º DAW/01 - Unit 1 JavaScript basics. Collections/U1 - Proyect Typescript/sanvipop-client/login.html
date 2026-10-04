@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login | SanviPop</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Sanvipop</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form action="#" id="form-login" class="mt-4" method="POST" role="form">
+        <legend>Welcome to SanviPop!</legend>
+
+        <div class="mb-3">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email" required />
+        </div>
+        <div class="mb-3">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" name="password" id="password" placeholder="Password" required />
+        </div>
+        <p class="text-danger" id="errorInfo"></p>
+        <a class="btn btn-secondary" href="register.html" role="button">Create account</a>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

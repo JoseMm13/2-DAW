@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Detail | SanviPop</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">SanviPop</a>
+        <ul class="navbar-nav me-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add-product.html">New product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">My profile</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="productContainer" class="mt-4">
+        <!-- Ficha del Producto -->
+        <div class="card shadow" id="productCard">
+          <div class="row g-0">
+            <div class="col-md-5">
+              <img
+                src="img/running bike.jpg"
+                class="img-fluid rounded-start w-100 h-100 object-fit-cover"
+                alt="Mountain bike"
+                id="mainPhoto"
+              />
+            </div>
+            <div class="col-md-7 d-flex flex-column">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div>
+                    <span class="badge bg-secondary-subtle text-secondary-emphasis border" id="category">Sports</span>
+                    <span class="badge bg-danger" id="status">Sold</span>
+                  </div>
+                  <button class="btn btn-outline-warning btn-sm active" id="bookmarkBtn" title="Saved in favorites">
+                    <i class="bi bi-bookmark-fill"></i> Saved
+                  </button>
+                </div>
+
+                <h2 class="card-title fw-bold" id="title">Mountain bike</h2>
+                <h3 class="text-success fw-bold my-3" id="price">150.50 €</h3>
+                <p class="card-text text-secondary" id="description">
+                  Bicycle in perfect condition.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2 my-3" id="productActions">
+                  <button class="btn btn-success" id="buyProduct">
+                    <i class="bi bi-bag-check-fill"></i> Buy
+                  </button>
+                  <a href="add-product.html?id=3" class="btn btn-outline-primary" id="editProduct">
+                    <i class="bi bi-pencil-square"></i> Edit
+                  </a>
+                  <button class="btn btn-outline-danger" id="deleteProduct">
+                    <i class="bi bi-trash"></i> Delete
+                  </button>
+                </div>
+
+                <hr />
+
+                <div class="row text-muted small g-3">
+                  <div class="col-auto">
+                    <i class="bi bi-calendar3"></i> Published: <span id="datePublished">15/03/2026, 10:00</span>
+                  </div>
+                  <div class="col-auto">
+                    <i class="bi bi-eye"></i> <span id="numVisits">15</span> views
+                  </div>
+                  <div class="col-auto">
+                    <i class="bi bi-geo-alt"></i> <span id="distance">1.45</span> km away
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-footer bg-transparent text-muted mt-auto">
+                <div class="row align-items-center">
+                  <div class="col-auto avatar ps-1 pe-1">
+                    <img class="rounded-circle" src="img/dog.jpg" alt="María Gómez" id="ownerPhoto" />
+                  </div>
+                  <div class="col">
+                    <div class="name" id="ownerName">María Gómez</div>
+                    <div>
+                      <small class="text-muted" id="ownerEmail">maria@correo.es</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transaction & Reviews (Sold to Juan Pérez) -->
+        <div class="card shadow mt-4" id="transactionCard">
+          <div class="card-header bg-light fw-bold">
+            <i class="bi bi-patch-check-fill text-success"></i> Sale information & reviews
+          </div>
+          <div class="card-body">
+            <div class="row g-3">
+              <!-- Buyer Review -->
+              <div class="col-md-6" id="buyerRatingCard">
+                <div class="p-3 border rounded h-100 bg-light-subtle">
+                  <div class="d-flex align-items-center mb-2">
+                    <img class="rounded-circle me-2" src="img/dog.jpg" width="40" height="40" alt="Juan Pérez" id="buyerPhoto" />
+                    <div>
+                      <div class="fw-bold" id="buyerName">Buyer: Juan Pérez</div>
+                      <small class="text-muted" id="buyerEmail">juan@correo.es</small>
+                    </div>
+                  </div>
+                  <div class="mb-2">
+                    <span class="text-warning" id="buyerRatingStars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </span>
+                    <span class="badge bg-secondary ms-1" id="buyerRating">4 / 5</span>
+                  </div>
+                  <p class="card-text fst-italic mb-0" id="buyerComment">"Everything as agreed"</p>
+                </div>
+              </div>
+
+              <!-- Seller Review -->
+              <div class="col-md-6" id="sellerRatingCard">
+                <div class="p-3 border rounded h-100 bg-light-subtle">
+                  <div class="d-flex align-items-center mb-2">
+                    <img class="rounded-circle me-2" src="img/dog.jpg" width="40" height="40" alt="María Gómez" />
+                    <div>
+                      <div class="fw-bold">Seller: María Gómez</div>
+                      <small class="text-muted">maria@correo.es</small>
+                    </div>
+                  </div>
+                  <div class="mb-2">
+                    <span class="text-warning" id="sellerRatingStars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </span>
+                    <span class="badge bg-secondary ms-1" id="sellerRating">5 / 5</span>
+                  </div>
+                  <p class="card-text fst-italic mb-0" id="sellerComment">"Fast and reliable buyer"</p>
+                </div>
+              </div>
+
+              <!-- Pending Review Scenario -->
+              <div class="col-12" id="pendingRatingCard">
+                <div class="p-3 border border-warning-subtle rounded bg-warning-subtle d-flex flex-wrap justify-content-between align-items-center">
+                  <div class="d-flex align-items-center mb-2 mb-md-0">
+                    <i class="bi bi-clock-history text-warning-emphasis fs-3 me-3"></i>
+                    <div>
+                      <div class="fw-bold text-warning-emphasis">Transaction pending review</div>
+                      <small class="text-muted">The buyer or seller has not yet reviewed the transaction.</small>
+                    </div>
+                  </div>
+                  <button class="btn btn-warning btn-sm fw-semibold" id="btnRateTransaction">
+                    <i class="bi bi-star-fill me-1"></i> Review transaction
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form to review the transaction -->
+            <div class="card border-0 bg-light p-3 mt-4" id="ratingFormContainer">
+              <h5 class="fw-bold mb-3">
+                <i class="bi bi-star-half text-warning me-1"></i> Review the transaction
+              </h5>
+              <form id="ratingForm" novalidate>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold d-block">Rating:</label>
+                  <div class="star-rating" id="ratingStars">
+                    <input type="radio" id="star5" name="ratingScore" value="5" required />
+                    <label for="star5" title="5 stars"><i class="bi bi-star"></i></label>
+
+                    <input type="radio" id="star4" name="ratingScore" value="4" />
+                    <label for="star4" title="4 stars"><i class="bi bi-star"></i></label>
+
+                    <input type="radio" id="star3" name="ratingScore" value="3" />
+                    <label for="star3" title="3 stars"><i class="bi bi-star"></i></label>
+
+                    <input type="radio" id="star2" name="ratingScore" value="2" />
+                    <label for="star2" title="2 stars"><i class="bi bi-star"></i></label>
+
+                    <input type="radio" id="star1" name="ratingScore" value="1" />
+                    <label for="star1" title="1 star"><i class="bi bi-star"></i></label>
+                  </div>
+                  <div class="user-invalid-feedback">Please select a rating.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="ratingComment" class="form-label fw-semibold">Comment:</label>
+                  <textarea
+                    class="form-control"
+                    id="ratingComment"
+                    name="ratingComment"
+                    rows="3"
+                    placeholder="Write your review about the transaction and the product..."
+                    required
+                    minlength="5"
+                  ></textarea>
+                  <div class="user-invalid-feedback">Comment is required (minimum 5 characters).</div>
+                </div>
+
+                <div class="d-flex gap-2">
+                  <button type="submit" class="btn btn-primary" id="btnSubmitRating">
+                    <i class="bi bi-send-fill me-1"></i> Submit review
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary" id="btnCancelRating">
+                    <i class="bi bi-x-circle me-1"></i> Cancel
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="text-muted small mt-3">
+              <i class="bi bi-clock-history"></i> Transaction date: <span id="dateTransaction">16/03/2026, 14:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Seller's Location -->
+      <div class="card shadow mt-4 mb-4">
+        <div class="card-header bg-success text-white" id="address">
+          <i class="bi bi-geo-alt-fill"></i> Seller's location
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+  </body>
+</html>

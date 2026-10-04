@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home | SanviPop</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">SanviPop</a>
+        <ul class="navbar-nav me-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add-product.html">New product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">My profile</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!--Opcional-->
+      <nav class="navbar navbar-light bg-light justify-content-between mt-3">
+        <form class="container-fluid d-flex flex-nowrap gap-2" id="searchForm">
+          <input
+            class="form-control flex-grow-1"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <select class="form-select w-auto" name="order" id="order" aria-label="Sort by">
+            <option value="distance">Distance</option>
+            <option value="price">Price</option>
+            <option value="views">Views</option>
+          </select>
+          <button type="submit" class="btn btn-primary" aria-label="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </nav>
+
+      <div class="text-muted mt-2" id="filterInfo">
+        Showing all products. Sorted by distance.
+      </div>
+
+      <div
+        id="productsContainer"
+        class="mb-4 mt-4 row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4"
+      >
+        <!-- Product 1 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/chicken.jpg" class="card-img-top" alt="Squeaky rubber chicken" />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border">Toys</span>
+                <span class="fs-5 fw-bold text-success">5 €</span>
+              </div>
+              <h5 class="card-title fw-semibold mb-2">Squeaky rubber chicken</h5>
+              <p class="card-text text-muted small flex-grow-1">
+                Classic yellow rubber chicken that makes sound when pressed. Great for pranks or pets.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent text-muted">
+              <div class="row align-items-center">
+                <div class="col-auto avatar ps-1 pe-1">
+                  <img class="rounded-circle" src="img/dog.jpg" alt="Tobby" />
+                </div>
+                <div class="col">
+                  <div class="name">Tobby</div>
+                  <div>
+                    <small class="text-muted">12/09/2026, 14:30</small>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-outline-danger btn-sm delete" title="Delete product">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+                <div class="col-auto text-muted text-end">
+                  <div>
+                    <small>24 <i class="bi bi-eye"></i></small>
+                  </div>
+                  <div><small>1.2 km</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/dinosaur.jpg" class="card-img-top" alt="T-Rex dinosaur plush" />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border">Toys</span>
+                <span class="fs-5 fw-bold text-success">12 €</span>
+              </div>
+              <h5 class="card-title fw-semibold mb-2">T-Rex dinosaur plush</h5>
+              <p class="card-text text-muted small flex-grow-1">
+                Soft and huggable green T-Rex dinosaur plush. Like new, barely used.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent text-muted">
+              <div class="row align-items-center">
+                <div class="col-auto avatar ps-1 pe-1">
+                  <img class="rounded-circle" src="img/dog.jpg" alt="Tobby" />
+                </div>
+                <div class="col">
+                  <div class="name">Tobby</div>
+                  <div>
+                    <small class="text-muted">10/09/2026, 09:15</small>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-outline-danger btn-sm delete" title="Delete product">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+                <div class="col-auto text-muted text-end">
+                  <div>
+                    <small>58 <i class="bi bi-eye"></i></small>
+                  </div>
+                  <div><small>2.5 km</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/microphone.jpg" class="card-img-top" alt="Retro vintage microphone" />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border">Music</span>
+                <span class="fs-5 fw-bold text-success">45 €</span>
+              </div>
+              <h5 class="card-title fw-semibold mb-2">Retro vintage microphone</h5>
+              <p class="card-text text-muted small flex-grow-1">
+                50s style dynamic microphone with chrome finish. Clear sound and in mint condition.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent text-muted">
+              <div class="row align-items-center">
+                <div class="col-auto avatar ps-1 pe-1">
+                  <img class="rounded-circle" src="img/dog.jpg" alt="Tobby" />
+                </div>
+                <div class="col">
+                  <div class="name">Tobby</div>
+                  <div>
+                    <small class="text-muted">08/09/2026, 18:45</small>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-outline-danger btn-sm delete" title="Delete product">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+                <div class="col-auto text-muted text-end">
+                  <div>
+                    <small>112 <i class="bi bi-eye"></i></small>
+                  </div>
+                  <div><small>0.8 km</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="img/suitcase.jpg" class="card-img-top" alt="Classic travel suitcase" />
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge bg-secondary-subtle text-secondary-emphasis border">Travel</span>
+                <span class="fs-5 fw-bold text-success">35 €</span>
+              </div>
+              <h5 class="card-title fw-semibold mb-2">Classic travel suitcase</h5>
+              <p class="card-text text-muted small flex-grow-1">
+                Vintage sturdy brown leather suitcase with metal clasps. Ideal for getaways or decor.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent text-muted">
+              <div class="row align-items-center">
+                <div class="col-auto avatar ps-1 pe-1">
+                  <img class="rounded-circle" src="img/dog.jpg" alt="Tobby" />
+                </div>
+                <div class="col">
+                  <div class="name">Tobby</div>
+                  <div>
+                    <small class="text-muted">05/09/2026, 11:20</small>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <button class="btn btn-outline-danger btn-sm delete" title="Delete product">
+                    <i class="bi bi-trash"></i>
+                  </button>
+                </div>
+                <div class="col-auto text-muted text-end">
+                  <div>
+                    <small>87 <i class="bi bi-eye"></i></small>
+                  </div>
+                  <div><small>3.1 km</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mb-5">
+        <button type="button" class="btn btn-primary" id="loadMore">
+          Load more products
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User profile | SanviPop</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">SanviPop</a>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add-product.html">New product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="profile.html">My profile</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row mt-4" id="profile">
+        <div class="col-3">
+          <div>
+            <img class="w-100" id="photo" src="img/dog.jpg" alt="Tobby" />
+            <label class="btn btn-sm btn-danger">
+              <i class="bi bi-image"></i>
+              <input type="file" id="photoInput" class="d-none" />
+            </label>
+          </div>
+        </div>
+
+        <div class="col-9" id="profileInfo">
+          <!--  Cambiar h4 por inputs con un botón -->
+          <h4 id="name">Tobby</h4>
+          <h4 id="email">
+            <small class="text-muted">tobby@sanvipop.com</small>
+          </h4>
+          <!-- Añadir campo de modificar password que muestre 2 campos -->
+          <div class="mb-3">
+            <button class="btn btn-primary" id="editProfile">
+              <i class="bi bi-pencil-square"></i>
+              Edit profile
+            </button>
+            <button class="btn btn-success" id="editPassword">
+              <i class="bi bi-lock-fill"></i>
+              Edit password
+            </button>
+          </div>
+
+          <div class="d-flex flex-wrap gap-2 pt-3 border-top" id="userProductsLinks">
+            <a href="index.html?user=1&status=selling" class="btn btn-outline-primary" id="linkSelling">
+              <i class="bi bi-tag-fill"></i> On sale
+            </a>
+            <a href="index.html?user=1&status=sold" class="btn btn-outline-success" id="linkSold">
+              <i class="bi bi-check-circle-fill"></i> Sold
+            </a>
+            <a href="index.html?user=1&status=bought" class="btn btn-outline-info" id="linkBought">
+              <i class="bi bi-bag-check-fill"></i> Purchased
+            </a>
+            <a href="index.html?user=1&status=bookmarked" class="btn btn-outline-warning" id="linkFavorites">
+              <i class="bi bi-bookmark-heart-fill"></i> Favorites
+            </a>
+          </div>
+        </div>
+
+        <div class="col-9 d-none" id="profileForm">
+          <form>
+            <div class="mb-3">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Email" value="tobby@sanvipop.com" />
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" name="name" id="name" placeholder="Name" value="Tobby" />
+            </div>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-danger" id="cancelEditProfile">Cancel</button>
+          </form>
+        </div>
+
+        <div class="col-9 d-none" id="passwordForm">
+          <form>
+            <div class="mb-3">
+              <label for="password">Password:</label>
+              <input type="password" class="form-control" name="password" id="password" placeholder="Password" />
+              <label for="password2">Repeat password:</label>
+              <input type="password" class="form-control" name="password2" id="password2" placeholder="Repeat password" />
+            </div>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-danger" id="cancelEditPassword">Cancel</button>
+          </form>
+        </div>
+      </div>
+      <div class="mt-4" id="map"></div>
+    </div>
+  </body>
+</html>
