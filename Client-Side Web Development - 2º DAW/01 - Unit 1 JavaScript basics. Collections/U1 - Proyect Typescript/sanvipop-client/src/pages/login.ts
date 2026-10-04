@@ -1,4 +1,3 @@
-// src/pages/login.ts
 import { apiFetch } from '../api/config';
 import { getCurrentUser } from '../utils/session';
 import { getUserGeolocation } from '../utils/geo';
