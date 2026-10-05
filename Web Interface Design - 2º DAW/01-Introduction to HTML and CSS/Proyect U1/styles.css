@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GLOBAL */
+body {
+    background: #0a0a0f;
+    color: #e0e0ff;
+    font-family: "Courier New", monospace;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    border-bottom: 3px solid magenta;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MAIN LAYOUT */
+main {
+    max-width: 1200px;
+    min-width: 700px;
+    margin: auto;
+    overflow: auto; 
+}
+
+main > section {
+    float: left;
+    width: 68%;
+    padding-right: 20px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    background: #111122;
+    padding: 15px;
+    border-left: 3px solid magenta;
+    border-top: 3px solid magenta;
+}
+
+/* FORMULARIO */
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: magenta;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: cyan;
+}
+
+/* SELECTORES AVANZADOS EN .ranking-retro */
+
+/* Párrafo justo después del h2 */
+.ranking-retro h2 + p {
+    color: cyan;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Lista justo después del párrafo */
+.ranking-retro h2 + p + ul {
+    margin-top: 10px;
+    border-top: 2px dotted cyan;
+    padding-top: 10px;
+}
+
+/* Separación entre juegos excepto el último */
+.ranking-retro ul li:not(:last-child) {
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+/* Segundo juego */
+.ranking-retro ul li:nth-child(2) {
+    color: magenta;
+    font-weight: bold;
+}
+
+/* Icono antes de cada juego */
+.ranking-retro ul li::before {
+    content: "👾 ";
+}
+
+/* Párrafo de advertencia */
+.ranking-retro ul + p {
+    background: #1a1a22;
+    border: 2px solid gold;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Enlace final con texto extra */
+.ranking-retro a::after {
+    content: " [INSERT COIN]";
+    color: gold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 3px solid magenta;
+    padding-top: 10px;
+}
+
+/* Article */
+article {
+    margin-bottom: 20px;
+}
