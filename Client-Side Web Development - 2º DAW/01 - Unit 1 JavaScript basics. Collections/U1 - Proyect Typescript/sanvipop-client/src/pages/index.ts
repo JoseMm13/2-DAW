@@ -1,5 +1,5 @@
-// src/pages/index.ts
-import { getProducts, Product } from '../api/products';
+import { getProducts } from '../api/products';
+import type { Product } from '../api/products';
 import { getQueryParam } from '../utils/url';
 
 let currentPage = 1;

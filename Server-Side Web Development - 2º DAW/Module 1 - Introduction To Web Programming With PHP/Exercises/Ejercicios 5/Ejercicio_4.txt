@@ -1,0 +1,4 @@
+• La primera vez que se llama a la página, ¿qué tipo de petición se realiza?
+- La primera vez que se llama a la página simplemente se carga el archivo ejercicio_5_4.php sin enviar datos, además sale debajo del formulario, Sin datos.
+• ¿Y cuando se envía el formulario? 
+- Cuando se envía el formulario la petición es del method 'POST', y se muestran los datos que hayan puesto en dicho formulario.
