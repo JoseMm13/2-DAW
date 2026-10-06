@@ -1,0 +1,119 @@
+1.
+¿Qué modelo de responsabilidad aplica en AWS?  
+✔ a) Modelo de responsabilidad compartida
+
+2.
+¿Qué servicio permite ejecutar código sin administrar servidores?  
+✔ b) AWS Lambda
+
+3.
+¿Qué servicio distribuye contenido globalmente con baja latencia?  
+✔ c) Amazon CloudFront
+
+4.
+¿Qué servicio proporciona bases de datos NoSQL?  
+✔ d) Amazon DynamoDB
+
+5.
+¿Qué servicio permite aprovisionar infraestructura como código?  
+✔ a) AWS CloudFormation
+
+6.
+¿Qué servicio gestiona identidades y permisos?  
+✔ b) AWS IAM
+
+7.
+¿Qué servicio monitoriza recursos y métricas?  
+✔ c) Amazon CloudWatch
+
+8.
+¿Qué servicio almacena objetos?  
+✔ d) Amazon S3
+
+9.
+¿Qué servicio ejecuta contenedores sin servidores?  
+✔ b) AWS Fargate
+
+10.
+¿Qué servicio crea redes privadas virtuales?  
+✔ a) Amazon VPC
+
+11.
+¿Qué servicio migra bases de datos?  
+✔ c) AWS DMS
+
+12.
+¿Qué servicio gestiona claves de cifrado?  
+✔ d) AWS KMS
+
+13.
+¿Qué servicio detecta amenazas y actividad sospechosa?  
+✔ a) Amazon GuardDuty
+
+14.
+¿Con qué servicio se lanzó oficialmente AWS en 2006?  
+✔ a) Amazon Simple Queue Service (SQS)
+
+15.
+¿Qué servicio ejecuta máquinas virtuales?  
+✔ c) Amazon EC2
+
+16.
+¿Qué tipo de instancia ofrece grandes descuentos si AWS puede recuperarla?  
+✔ b) Instancias Spot
+
+17.
+La transferencia de datos de entrada hacia AWS es…  
+✔ a) Generalmente gratuita
+
+18.
+¿Qué servicio es equivalente a un RDBMS tradicional?  
+✔ c) Amazon RDS
+
+19.
+Una instancia EC2 es equivalente a…  
+✔ b) Un servidor físico tradicional
+
+20.
+¿Qué plan ofrece <15 min de respuesta para casos críticos?  
+✔ d) Enterprise Support
+
+21.
+¿Qué escenario genera cargos por transferencia de datos?  
+✔ c) Transferencia entre regiones (EC2 Irlanda → S3 Virginia)
+
+22.
+¿Para qué sirven las SCP en AWS Organizations?  
+✔ b) Restringir acceso a servicios en cuentas u OUs
+
+23.
+Relación entre Región y AZ:  
+✔ d) Una Región contiene múltiples Zonas de Disponibilidad
+
+24.
+¿Qué servicio ejecuta cargas on‑premises por latencia?  
+✔ c) AWS Outposts
+
+25.
+¿Por qué usar múltiples AZ?  
+✔ d) Aumentar disponibilidad y tolerancia a fallos
+
+26.
+¿Qué servicio es equivalente a un firewall?  
+✔ b) Security Groups
+
+27.
+Un bucket S3 es equivalente a…  
+✔ a) Un sistema de almacenamiento de archivos / NAS
+
+28.
+¿Qué es una Región de AWS?  
+✔ b) Área geográfica con múltiples AZ
+
+29.
+“Pagar solo por lo que se usa” significa…  
+✔ a) Sin costes iniciales, sin contratos, pago por consumo
+
+30.
+¿Qué herramienta permite crear presupuestos y alertas?  
+✔ b) AWS Budgets

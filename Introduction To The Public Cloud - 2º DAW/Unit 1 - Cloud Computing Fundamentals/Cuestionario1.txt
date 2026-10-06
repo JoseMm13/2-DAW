@@ -1,0 +1,79 @@
+Pregunta 1  
+¿Qué es la computación en la nube?
+Respuesta: a. Uso de recursos informáticos a través de Internet
+
+Pregunta 2  
+¿Qué modelo de servicio ofrece aplicaciones listas para usar?
+Respuesta: c. Software como servicio
+
+Pregunta 3  
+¿Qué modelo permite al usuario gestionar el sistema operativo?
+Respuesta: d. Infraestructura como servicio
+
+Pregunta 4  
+¿Qué modelo proporciona plataformas para desarrollar aplicaciones?
+Respuesta: b. Plataforma como servicio
+
+Pregunta 5  
+¿Qué tipo de nube es operada por una sola organización?
+Respuesta: a. Nube privada
+
+Pregunta 6  
+Los recursos se comparten entre diferentes usuarios
+Respuesta: a. Los recursos se comparten entre diferentes usuarios
+
+Pregunta 7  
+Modelo de pago por uso
+Respuesta: d. Modelo de pago por uso
+
+Pregunta 8  
+Dependencia de la conexión a Internet
+Respuesta: a. Dependencia de la conexión a Internet
+
+Pregunta 9  
+¿Qué proveedor de nube ofrece el servicio AWS?
+Respuesta: d. Amazon
+
+Pregunta 10  
+¿Cuál de las siguientes opciones describe mejor una nube comunitaria?
+Respuesta: d. Infraestructura compartida por varias organizaciones con intereses comunes
+
+Pregunta 11  
+¿Qué significa IaaS?
+Respuesta: d. Infraestructura como servicio
+
+Pregunta 12  
+¿Cuál de los siguientes es un servicio típico de IaaS?
+Respuesta: a. Máquinas virtuales
+
+Pregunta 13  
+¿Qué proveedor de nube ofrece el servicio Azure?
+Respuesta: b. Microsoft
+
+Pregunta 14  
+¿Indica la opción incorrecta sobre certificaciones profesionales en la nube?
+Respuesta: b. Las certificaciones de Azure son convalidarles con las de Amazon
+
+Pregunta 15  
+¿Qué significa SaaS?
+Respuesta: c. Software como servicio
+
+Pregunta 16  
+En AWS, ¿qué es una región?
+Respuesta: c. Una ubicación geográfica que contiene varios centros de datos
+
+Pregunta 17  
+¿Qué es la elasticidad en la nube?
+Respuesta: d. La capacidad de ajustar recursos automáticamente según la demanda
+
+Pregunta 18  
+¿Cuál de los siguientes es un servicio típico de PaaS?
+Respuesta: b. Entornos de desarrollo y despliegue de aplicaciones
+
+Pregunta 19  
+¿Cuál de las siguientes es una ventaja de la computación en la nube?
+Respuesta: d. Escalabilidad
+
+Pregunta 20  
+¿Qué tipo de nube combina infraestructuras privadas y públicas?
+Respuesta: d. Nube híbrida
