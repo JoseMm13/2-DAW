@@ -1,5 +1,5 @@
 // clinicData.js
-export const patients = [
+export const clinicData = [
   {
     patientId: "PAC-2022-09A#",
     name: "Elena Rostova",
