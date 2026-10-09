@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 2em;
+            padding: 0 1em;
+            margin-top: 1em;
+            margin-bottom: 2em;
+            justify-content: space-evenly;
+
+            div {
+                font-size: 2em;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #ddd;
+                box-shadow: 2px 2px 4px #aaa;
+                cursor: pointer;
+                user-select: none;
+
+                &.selected {
+                    background-color: green;
+                    color: white;
+                }
+            }
+        }
+    </style>
+    <script src="exercise2.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+        <div>Div 7</div>
+        <div>Div 8</div>
+        <div>Div 9</div>
+        <div>Div 10</div>
+        <div>Div 11</div>
+        <div>Div 12</div>
+        <div>Div 13</div>
+        <div>Div 14</div>
+        <div>Div 15</div>
+    </div>
+    <input type="text" id="text">
+    <button id="insert-before">Insert before</button>
+    <button id="insert-after">Insert after</button>
+    <button id="replace">Replace</button>
+    <button id="delete">Delete selected</button>
+    <button id="clear">Delete all</button>
+</body>
+</html>
