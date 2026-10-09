@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exercise-forms.js" defer></script>
+    <style>
+        td img {
+            height: 40px;
+        }
+
+        td {
+            vertical-align: center;
+            padding: 0px 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Get the information from the form when it's sent and create a new row in the table (tbody) with all that information.<br>
+        After that clear the form (reset() method), and the #imgPreview element
+    </p>
+    <form id="form1">
+        <p>Name: <input type="text" name="name"></p>
+        <p>
+            Main language: 
+            <select name="language">
+                <option value="spanish">Spanish</option>
+                <option value="english">English</option>
+                <option value="french">French</option>
+            </select>
+        </p>
+        <p>
+            Hobbies: 
+            <input type="checkbox" name="hobbies" value="tennis"> Tennis
+            <input type="checkbox" name="hobbies" value="food"> Food
+            <input type="checkbox" name="hobbies" value="travel"> Travel
+            <input type="checkbox" name="hobbies" value="walk"> Walk
+        </p>
+        <p>
+            Favourite food:
+            <input type="radio" name="food" value="pizza"> Pizza
+            <input type="radio" name="food" value="hamburguer"> Hamburguer
+            <input type="radio" name="food" value="motor oil"> Motor oil
+        </p>
+        <p>
+            Photo: <input type="file" name="photo">
+        </p>
+        <p>
+            <img src="" alt="" id="imgPreview">
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th>Name</th>
+                <th>Hobbies</th>
+                <th>Fav. Food</th>
+                <th>Main language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Here goes the data -->
+        </tbody>
+    </table>
+</body>
+</html>
