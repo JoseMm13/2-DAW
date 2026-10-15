@@ -57,22 +57,24 @@
     </form>
 
     <div id="productsContainer" class="mb-4 mt-4 row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-      <div class="col">
-        <div class="card h-100 shadow">
-          <img class="card-img-top" src="./img/chicken.jpg">
-          <div class="card-body">
-            <h5 class="card-title">Rubber Chicken</h5>
-            <p class="card-text">Create symphonies with this chicken.</p>
-            <button type="button" class="btn btn-danger btn-delete">Delete</button>
-          </div>
-          <div class="card-footer bg-transparent text-muted">
-            <div class="row">
-              <div class="col category">Category</div>
-              <div class="col text-end price">100 €</div>
+      <template id="productTemplate">
+        <div class="col">
+          <div class="card h-100 shadow">
+            <img class="card-img-top" src="./img/chicken.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Rubber Chicken</h5>
+              <p class="card-text">Create symphonies with this chicken.</p>
+              <button type="button" class="btn btn-danger btn-delete">Delete</button>
+            </div>
+            <div class="card-footer bg-transparent text-muted">
+              <div class="row">
+                <div class="col category">Category</div>
+                <div class="col text-end price">100 €</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </template>
     </div>
   </div>
 
