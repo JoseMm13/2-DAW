@@ -1,3 +1,5 @@
+/* José Ángel García Martínez 2º DAW-Semi */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -25,4 +27,164 @@ ul {
 
 main {
     flex-grow: 1;
+    padding: 2rem;
+}
+
+/* Headerr */
+
+header {
+    background-color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    > h1 {
+        color: #1e40af;
+    }
+
+    nav {
+
+        > ul {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+
+            > li {
+                position: relative;
+
+                > a {
+                    font-weight: 600;
+                    transition: color 0.3s;
+                }
+
+                > a:hover {
+                    color: #e11d48;
+                }
+            }
+        }
+    }
+}
+
+/* Submenú  */
+
+.desplegable {
+
+    > ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        min-width: max-content;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+        border-radius: 8px;
+        overflow: hidden;
+
+        li {
+
+            a {
+                display: block;
+                padding: 0.8rem 1rem;
+                white-space: nowrap;
+            }
+
+            a:hover {
+                background-color: #e11d48;
+                color: white;
+            }
+        }
+    }
+
+    &:hover > ul {
+        display: flex;
+    }
+}
+
+/* Targeta */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+
+    > h2 {
+        width: 100%;
+        text-align: center;
+        color: #1e40af;
+        margin-bottom: 1rem;
+    }
+
+    article {
+        flex: 1 1 320px;
+        max-width: 360px;
+        background-color: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        border-top: 6px solid #1e40af;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .08);
+        transition: all 0.3s ease;
+
+        &:hover {
+            transform: translateY(-8px);
+            border-top-color: #e11d48;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
+        }
+
+        h3 {
+            margin-bottom: 0.8rem;
+            color: #1e40af;
+        }
+
+        h3 + p {
+            color: #475569;
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: #f8fafc;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #e11d48;
+        }
+    }
+}
+
+/* media query per a fer-la  */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
 }
